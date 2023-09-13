@@ -1,119 +1,141 @@
-The goal of this project is to create a game in 3D using raycasting !
 
-You don’t have to do the tasks in order, except for the first one (obviously), or if a task depends on a previous one
+Conversation opened. 1 read message.
 
-You have a link to a very good and very long tutorial about raycasting in the Tips and links section below, so read it very carefully, and practice !
+Skip to content
+Using Gmail with screen readers
+2 of 370
+README.md
+Inbox
 
-Please have a lot of fun doing this project !
-
-0. Walls !
-In this first part, you’ll have to:
-
-Create a window with SDL2
-Use raycasting to draw walls on your window !
-You don’t need to be able to rotate the camera during the execution in this part, but you must provide a way to change the angle of the camera in your code to see if it works after recompiling it
-The color of the walls must be different from the color of the ground/ceil
-The map doesn’t need to be parsed from a file, but you must provide a way to modify it in your code to see if it works after recompiling it. (e.g. using an array of arrays of integers or characters).
-Example:
+Isaac Muriithi
+Attachments
+Tue, Sep 12, 12:21 PM (23 hours ago)
+to me
 
 
+ One attachment
+  •  Scanned by Gmail
+**Hunters Maze Game**
 
-In the following image, the camera is the red square, and the visible area is painted in green:
+**Portfolio Project**
 
+**Introduction**
 
+Hunters Maze Game is a simple program that makes random maze using opengl api with C++ language. The Hunters Maze Game is meant to provide a seamless and engaging gameplay experience, creating a maze game requires many critical technological and architectural concerns. There is a top-down shooter where the player’s objective is to survive waves of enemies. You want to create an enemy AI behavior that presents a significant challenge to players.
 
-1. Orientation
-In this part, you must draw a different color depending on the orientation of the walls.
+The links shown below furnish a more in-depth insight on the Hunters Maze Game.
 
-You must at least draw walls facing NORTH and SOUTH in a different color from walls facing EAST and WEST.
-Example:
+**Deployed site and landing page**
 
+(http:// Frazier-Creation.github.io), (https:// Frazier-Creation.github.io/Frazier-Creation.io)
+(http://SilGithinji.github.io), (https://SilGithinji.github.io/SilGithinji.github.io)
 
+**Authors LinkedIn**
 
-2. Rotation
-You must provide a way to rotate the camera during the execution.
+Frazier Omondi: https://www.linkedin.com/in/frazier-omondi-742534b7/
+Isaac Githinji: https://www.linkedin.com/in/silvester-muriithi-57499b1aa/
 
-For example, you can rotate the camera when the left,right arrows are pressed on the keyboard.
-Or you can rotate the camera when the mouse moves, just like a FPS game !
-Example:
+**Installation**
 
+•	Windows
 
+o	Required ... To Run This Program In Windows You Can Use The Codeblock IDE (Get Here) After That Follow The Instructions The Installation With The Addition Of The Opengl Api (Learn Here).
+o	How To Run :
+o	- Create A New Project Glut/Opengl Project
+o	- Just Copy Paste The Code In Your main.Cpp Has Been Made
 
-3. Move
-You must provide a way to move the camera during the execution.
+•	Linux
 
-For example, you can move the camera when the w,a,s,d keys are pressed on the keyboard.
-Example:
+o	You Can Use The Codeblock For Linux As Well.
+o	You Can Execute Your Code Using A Text Editor That You Love. Like Atoms, Sublime,Geany Or Another.
+Before Executing, You Must Install Some Dependenci Of Glut On Linux. What You Need To Do Is (Installation Via Terminal):
+o	Install The Compiler And Necessary Tools.A Fairly Complete Compiler You Can Use G++, How to :
+sudo apt-get install g++ cmake 
+o	Install Freeglut :
+sudo apt-get install freeglut3 freeglut3-dev
+o	Run Using Terminal :
+gcc -o excecutebin filename.cpp -lglut -lGL -lm -lGLU -lstdc++
 
+**Usage**
 
+•	Kruskal Algorithm
 
+Kruskal’s algorithm is a method for producing a minimal spanning tree from a weighted graph. The algorithm I’ll cover here is actually a randomized version of Kruskal’s; the original works something like this:
+o	Throw all of the edges in the graph into a big burlap sack. (Or, you know, a set or something.)
+o	Pull out the edge with the lowest weight. If the edge connects two disjoint trees, join the trees. Otherwise, throw that edge away.
+o	Repeat until there are no more edges left. 
 
+•	Maze Feature
 
-4. Ouch !
-In this part, you must handle the collisions of the player (yes, let’s call the camera player now, it’s getting serious) with the walls.
+o	Generate new layout "C"
+o	Change Object player "P"
+o	Change view "V" (2 Dimension, 3 Dimension, Fps)
+o	Move the player Up:"W" | Down:"S" | Left:"A" | Right:"D"
+o	Rotate maze -YAxis:"J" | -XAxis:"K" | XAxis:"I" | XAxis:"L" (Only In 3dimension)
+o	Action For Key --> 1,2,3,4,5
 
-The player must not be able to enter walls
-You can make the player slide on the walls instead of just stop it.
-5. Parser
-In this part you must implement a parser to get the map from a file.
+	Key 1 -> Active/Deactive Ambient Light
+	Key 2 -> Active/Deactive Diffuse Light
+	Key 3 -> Active/Deactive Specular Light
+	Key 4 -> Change The Day (Background)
+	Key 5 -> Change Wall Transparant or Not
 
-You are free to define the standards of your map (The character for a wall, the character for nothing, the extension of the file if you want, …)
-Your program will need a parameter to run which will be the path to the map file
-6. Draw the map
-In this part, you must draw the map on the window.
+o	Change Maze size , "+" to Increase and "-" to Decrease
+o	Arroy Key To Walk Inside Maze While in Fps Mode (ArrowKeyUP , ArrowKeyDOWN , ArrowKeyLEFT, ArrowKeyRIGHT)
+o	Change Nim (ID) Rotation Using Mouse Click (Left,Center,Right)
+o	Space to Run/Stop another one player.
 
-You’re free to draw the map where you want, with the color you want, …
-You must provide a way to enable/disable it during the execution
-Include the player’s line of sight in the map
-7. Coding style + Documentation
-Check if you code fits the Holberton School coding style.
-Check if your code is well documented and respect the Holberton School documentation format
-You can check all of this by yourself, just follow the instructions on this repository
+**Contributing**
 
-Be careful
+At first, we were not certain on what we could indulge with for the project. After the project was released, we decided that we would do what seemed impossible by working on the maze project. We desired to transform it into a story that suited our theme of using ALX as an opportunity to refine our developing skills to suit the modern market needs. Hunters Maze Game was birthed out of a desire to take on an existing challenge and explore an existing option that would make it better.
 
-The check will be done on each file present on your turn in repository. Even the files that was not required. So don’t forget to always keep your turn in directory clean.
+Three essential milestones were measured progressively. Milestone one which commenced in August and ended in two weeks entailed developing an introduction with a focus on the overview of the maze application and this enabled us to highlight the desired outcomes and achievements. It also allowed is to adequately plan through a progressive recap of scope and objectives against the set responsibilities and resources.
 
-8. Textures
-In this part you have to add textures on your walls !
+Milestone two commenced in mid-August and was also assessed after two weeks. It entailed Collaboration and communication entailed a progressive evaluation of tools and channels used in the development of the project with regards to how our regular team meetings and updates facilitated progress. The outcome of the introductory and collaboration efforts resulted in a refined overview of the maze concept and design which led to prototyping and testing stages to understand the iterative design process and its impact on the final maze.
 
-Example
+Milestone three commenced in September and was evaluated after two weeks. It entailed using C++ to physically and digitally test the maze project which enabled progressive monitoring leading to the final testing, documentation and validation stages.
+Below are some screenshots of the maze project at work.
 
+![The Maze Concept in Hunters Maze Game](./images/Maze_Concept.jpg)
 
+![The Hunters Maze Game concept shown in screenshot 1](./images/screenshot1.png)
 
-9. Multi task !
-Add a way to move on several directions and rotate in the same time. Basically in this part you’ll have to handle multiple events on the same frame.
+![The Hunters Maze Game concept shown in screenshot 2](./images/screenshot2.png)
 
-For example, if the keys to move are w,a,s,d:
+![The Hunters Maze Game concept shown in screenshot 3](./images/screenshot3.png)
 
-If the keys w and s are pressed in the same time, the player shouldn’t move.
-If the keys w and d are pressed in the same time, the player should move forward and right in the same time,
-…
-10. Ground textures
-In this part you have to add textures on the ground and/or on the ceiling !
+**Documentation**
 
-Example
+•	V-1.0
 
+o	In This Version, The Object The Player Can Still Penetrate The Wall
+o	Object Player Running (Right, Left, Bottom, Top) With Magnitude 0.1.
+o	The Shape Of The Maze Randomed By Using Button C & Player Can Walk A = Left, S = Down, D = To, W = Up
+o	Still 2 Dimensional Maze Form
 
+•	V-2.0
 
+o	Object cant penetrate the wall
+o	Have two object player (cube and cone)
+o	Have 2 different view, 2d and 3d
+o	When 3dviewmode, maze can rotation by I,J,K,L
+o	Nim rotation can change by mouse click (left,center,right)
+o	Change maze size using "+" to increase and "-" to decrease
 
+•	V-3.0
 
-11. Weapons
-Add weapons textures !
+o	Have 3 different view, 2d, 3d, Fps
+o	Can walk inside the maze using arrowKey when fps viewmode
+o	Active / Deactive 3 Light usign 1,2,3 Key
+o	Tranparant Wall usign the 5 Key
+o	Day or Night usign the 4 key
+o	Spaace to Run/Stop another one player.
 
-Example
+**License**
 
+Copyright (c) 2023 Frazier Omondi and Isaac Githinji
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-12. Enemies
-Add some enemies !
-
-Example from the game Wolfenstein 3D:
-
-
-
-13. Make it rain
-Add rain and a possibility to stop / start the rain with a key.
-
-14. Extra option
-Shadows, special lightning, etc… get creative!
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
